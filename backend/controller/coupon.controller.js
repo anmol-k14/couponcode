@@ -41,7 +41,7 @@ const claimcoupon = async (req, res) => {
 
     res.cookie('userClaimed', { timestamp: new Date() }, { maxAge: 3600 * 1000 });
 
-    res.json({ message: 'Coupon claimed successfully', coupon: coupon });
+    res.status(200).json({ message: 'Coupon claimed successfully', coupon: coupon });
 }
 
 module.exports =  claimcoupon ;
