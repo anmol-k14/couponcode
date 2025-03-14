@@ -15,7 +15,6 @@ const PORT = process.env.PORT || 5000;
 var corsOptions = {
     origin: process.env.FRONTENDURL,
     optionsSuccessStatus:200,
-
 };
 
 // Middleware
